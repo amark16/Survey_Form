@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <title>Music Preferences Survey</title>
+</head>
+<body id=container>
+    <div id="pre-form">
+    <h1 id="title">Music listening habits</h1>
+    <p id="description">We want to know more about your music listening habits and preferences</p>
+    </div>
+
+    <form id="survey-form">
+        <div class="form-element">
+            <label id="name-label" for="name">Name</label><br>
+            <input
+                type="text"
+                name="name"
+                id="name"
+                class="form-element"
+                placeholder="Enter your name"
+                required
+                />
+        </div>
+
+        <div class="form-element">
+            <label id="email-label" for="email">Email</label><br>
+            <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-element"
+                placeholder="Enter your email address"
+                required
+                />
+        </div>
+
+        <div class="form-element">
+            <label id="number-label" for="number">Age<span class="clue"> (optional)</span></label><br>
+            <input
+                type="number"
+                name="age"
+                id="number"
+                min="10"
+                max="120"
+                class="form-element"
+                placeholder="Age"
+                />
+        </div>
+
+        <div class="form-element">
+            <p id="pre-drop">How often do you listen to music?</p>
+            <select id="dropdown" name="enthusiast-level" class="form-element" required>
+                <option disabled selected value>Select how often you listen to music</option>
+                <option value="addicted">I'm a music addict! I listen to music all day no matter what I'm doing!</option>
+                <option value="love-it">I love music! I listen often throughout the day, during most of my activities</option>
+                <option value="reasonable">I listen to music almost every day but at certain times, such in the car or on the dog's walk</option>
+                <option value="not as much">I listen to music if it's on, or if I miss a specific song. Generally a few times a week</option>
+                <option value="not">I don't really listen to music, unless I'm in the supermarket and something is playing</option>
+            </select>
+        </div>
+
+        <div class="form-element">
+            <p>Would you listen to more music if you could?</p>
+            <label>
+            <input
+                type="radio"
+                value="Definitely"
+                name="more-music"
+                class="input-radio"
+                checked
+                />Definitely</label>
+                <br>
+            
+            <label>
+            <input
+                type="radio"
+                value="Maybe"
+                name="more-music"
+                class="input-radio"
+                />Maybe</label>
+                <br>
+
+            <label>
+            <input
+                type="radio"
+                value="No-thanks"
+                name="more-music"
+                class="input-radio"
+                />No thanks!</label>
+                        
+        </div>
+
+        <div class="form-element">
+            <p>Which are your favourite music genres?<span class="clue"> (select all that apply)</span></p>
+            <label>
+            <input
+                type="checkbox"
+                value="Rock"
+                name="genres"
+                class="input-checkbox"
+                />Rock</label>
+                <br>
+            <label>
+            <input
+                type="checkbox"
+                value="Pop"
+                name="genres"
+                class="input-checkbox"
+                />Pop</label>
+                <br>
+            <label>
+            <input
+                type="checkbox"
+                value="Metal"
+                name="genres"
+                class="input-checkbox"
+                />Metal</label>
+                <br>
+
+            <label>
+            <input
+                type="checkbox"
+                value="Hip-Hop-Rap"
+                name="genres"
+                class="input-checkbox"
+                />Hip-Hop / Rap</label>
+                <br>
+            
+            <label>
+            <input
+                type="checkbox"
+                value="Classical"
+                name="genres"
+                class="input-checkbox"
+                />Classical</label>
+                <br>
+            
+            <label>
+            <input
+                type="checkbox"
+                value="Blues / Jazz"
+                name="genres"
+                class="input-checkbox"
+                />Blues / Jazz</label>
+                <br>
+        </div>
+
+        <div class="form-element">
+            <p>If you wish, you may tell us a bit more about what music means to you<span class="clue"> (optional)</span></p>
+            <textarea id="user-comments" class="input-textarea" name="comment" placeholder="Write your thoughts here"/></textarea>
+
+        </div>
+
+        <div class="form-element">
+            <button type="submit" id="submit" title="Click here to submit form">Submit</button>
+        </div>
+
+    </form>
+
+    
+</body>
+
+</html>
